@@ -22,7 +22,7 @@ namespace OData_API.Controllers
         }
 
         [HttpGet(nameof(GetData))]
-        [EnableQuery(AllowedQueryOptions = AllowedQueryOptions.Filter | AllowedQueryOptions.OrderBy)]
+        [EnableQuery]
         public IActionResult GetData() => Ok(_employeeService.GetEmployees());
     }
 }
