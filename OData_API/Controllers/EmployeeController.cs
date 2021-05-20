@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.OData;
+using Microsoft.AspNet.OData.Query;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OData_API.Services;
@@ -21,7 +22,7 @@ namespace OData_API.Controllers
         }
 
         [HttpGet(nameof(GetData))]
-        [EnableQuery]
+        [EnableQuery(AllowedQueryOptions = AllowedQueryOptions.Filter | AllowedQueryOptions.OrderBy)]
         public IActionResult GetData() => Ok(_employeeService.GetEmployees());
     }
 }
