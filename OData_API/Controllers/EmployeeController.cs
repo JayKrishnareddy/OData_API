@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OData_API.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
     {
@@ -20,8 +20,8 @@ namespace OData_API.Controllers
             _employeeService = employeeService;
         }
 
-        [HttpGet(nameof(Get))]
+        [HttpGet(nameof(GetData))]
         [EnableQuery]
-        public IActionResult Get() => Ok(_employeeService.GetEmployees());
+        public IActionResult GetData() => Ok(_employeeService.GetEmployees());
     }
 }

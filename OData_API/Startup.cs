@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OData.Edm;
 using Microsoft.OpenApi.Models;
+using OData_API.Models;
 using OData_API.Services;
 using System;
 using System.Collections.Generic;
@@ -64,5 +65,6 @@ namespace OData_API
                 
             });
         }
+       
     }
 }
