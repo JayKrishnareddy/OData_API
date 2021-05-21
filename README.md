@@ -1,5 +1,7 @@
 ## OData In .NET 5
 
+### Integrating OData and its benefits using ASP.NET Core 5.0
+
 ### Query Options
 - $orderby
 - $select
